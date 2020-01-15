@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Demo_01</title>
+</head>
+
+<body>
+  <span></span>
+  <script>
+    class Rectangle {
+      //constructor
+      // constructor 是一个特殊的方法，用于构建和初始化一个由class创建的对象，一个类只能有一个constructor
+      constructor(height, width) {
+        this.height = height;
+        this.width = width;
+      }
+      //Getter
+      get area() {
+        return this.calcArea()
+      }
+      //Method
+      calcArea() {
+        return this.height * this.width;
+      }
+    }
+    const square = new Rectangle(10, 10)
+
+    console.log(square.area)
+
+
+    
+  </script>
+</body>
+
+</html>
